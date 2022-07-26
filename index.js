@@ -38,7 +38,9 @@ let cnt =0;
 let names = ['Peter','Henk','Sabelo','Lerato'];
 setTimeout(function(){
     console.log("SetTimeout....");
-}, 2000);
+    // To stop the timer
+    clearInterval(greeting);
+}, 8000);
 
 // 
 const greeting = setInterval(()=>{
